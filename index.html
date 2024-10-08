@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RequestCSSFINAL.css">
+    <link rel="favivcon" href="Favicon2.svg">
+</head>
+<body>
+    <form id="requestform">
+            <div id="LogoTitle" value = 'green'>
+                <img alt="logo" class="logo" src="https://upload.wikimedia.org/wikipedia/en/7/7d/Benguet_State_University.png">
+                <span>Office of the University Registrar </span>
+                
+                <div class="off-screen-menu">
+                    <div class="theme">
+                        <input type="radio" name="theme" id="light" onclick="change_oil()" checked>
+                        <label>Light Theme</label>
+                        <input type="radio" name="theme" id="dark" onclick="change_oil()">
+                        <label>Dark Theme</label>
+                        </span>
+                    </div>
+                    <div class="gallery">
+                        <div class="slider">
+                            <div class="slides">
+                                <img class="slide" src="imp1.jpg" alt="cute cat" >
+                                <img class="slide" src="imp2.jpg" alt="cuttie" >
+                                <img class="slide" src="imp3.jpg" alt="ang cute" >
+                            </div>
+                            <div class="gallery_button">
+                            <button class="prev" onclick="prevSlide()">&#10094</button>
+                            <button class="next" onclick="nextSlide()">&#10095</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <nav class="ham_nav">
+                    <div class="ham-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+    <div id="main"></div>
+        <div class="system pageOne" id="Login_Page" value="1">
+            <fieldset id="vision">
+                <h2>Vision</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam consequuntur dolorum accusamus perspiciatis aperiam quod ea natus soluta. Tempore eum deserunt, laudantium adipisci inventore maiores voluptatum minus repellat! Nobis.</p>
+            </fieldset>
+        <fieldset id="f1">
+            <div class="log">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Benguet_State_University.png" alt="BSU LOGO" class="bsulogo">
+                <h2 style="font-weight: normal;">Welcome to OUR's Requesting Services</h2>
+                <label for="studentID">Please enter your student ID below:</label><br>
+                <input type="text" id="studentID" name="student ID" class="input" placeholder="xxxxxxx" maxlength="7" required>
+                <p id="IDError" class="error"></p>
+                <button type="button" class="button" id="Login_button" onclick="nextPage('Login_Page')">Enter</button>
+            </div>
+        </fieldset>
+        
+        <fieldset id="mission">
+            <h2>Mission</h2>
+          
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, voluptatum aliquid inventore, suscipit repellat enim soluta culpa numquam, debitis blanditiis commodi quaerat cum animi! Eum eos officiis facilis eaque temporibus!</p>
+        </fieldset>
+
+        </div>
+
+
+        <div class="system pageTwo" id="Student_Info_Page" value="2" >
+            <fieldset id="f1">
+                <span id="nostyle">Good Day!</span>
+                <hr>
+                <table id="tableStudInfo">
+                    <tr>
+                        <td><label for="name" class="label" >Name: </label></td>
+                        <td><input id="name" type="text" placeholder="Last name  Given name" class="inputInfo" required><br>
+                        <span id="nameError" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sex" class="label" required>Sex at Birth: </td>
+                        <td> <input type="radio" id="Male" name="sex" value="Male"><label for="Male">Male</label>
+                            <input type="radio" id="Female" name="sex" value="Female"><label for="Female">Female</label></label><br>
+                            <span id="sex_error" class="error"></span>
+                        </td>
+                            
+                    </tr>
+                    <tr>
+                        <td><label for="degCorYr" class="label">Degree/Course and Year: </label></td>
+                        <td><input id="degCorYr" class="inputInfo"  type="text" placeholder="BSIT2"><br>
+                            <span id="dc_error" class="error"></span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td> <label for="contactNumber" class="label">Contact Number: </label></td>
+                        <td> <input type="text" class="inputInfo" placeholder="09xxxxxxxxx" required id="contactNumber" title="Please enter a valid contact number (10-11 digits)." maxlength="11"><br>
+                            <span id="contact_error" class="error"></span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="enrolled" class="label" required>Presently enrolled?: </td>
+                        <td><label for="Yes enrolled"><input type="radio" id="Yes enrolled" name="choice">Yes</label>
+                            <label for="No enrolled"><input type="radio" id="No enrolled" name="choice">No</label></label><br>
+                            <span id="pe_error" class="error"></span>
+                        </td>
+                            
+                    </tr>
+                    <tr>
+                        <td><label class="label" for="term1">Last Term Attended: </label></td>
+                        <td><select title="Last Term Attended" id="term1" name="term1"class="input" required>
+                            <option value="0">Choose</option>
+                            <option value="First Sem">First Semester</option>
+                            <option value="Second Sem">Second Semester</option>
+                            <option value="MidYear">Mid Year</option>
+                        </select>
+                        <label for="schoolYear" class="label"><br>S.Y.</label>
+                        <input type="text" class="input width" id="schoolYear" placeholder="2023" pattern="\d{4}" title="Format: 2023-2024">to<input type="text" class="input width" id="schoolYear" placeholder="2024" pattern="\d{4}" title="Format: 2023-2024"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="label" for="purpose" id="requesting">Purpose for requesting:</label></td>
+                        <td>
+                            <select id="purpose" class="input" name="purpose" required onchange="toggleSpecification()">
+                                <option value=" ">Choose</option>
+                                <option value="Reference">Reference</option>
+                                <option value="Board Examination">Board Examination</option>
+                                <option value="Employment">Employment</option>
+                                <option value="Promotion">Promotion</option>
+                                <option value="Transfer">Transfer</option>
+                                <option value="Scholarship">Scholarship</option>
+                                <option value="Others">Others</option> 
+                            </select>
+                            <br>
+                            <input type="text" id="specification" placeholder="Please specify" style="display:none;">
+                            <input type="text" id="scholarshipType" placeholder="Specify Scholarship Type" style="display:none;">
+                            <span id="p_error" class="error"></span>
+                        </td>
+                        
+                            
+                    </tr>
+                </table>
+                
+                <div class="nextback">
+                    <button type="button" id="backp1" class="button" onclick="backPage('Student_Info_Page')">Back</button>
+                    <button type="button" id="Nextp1" class="button" onclick="nextPage('Student_Info_Page')">Next</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class="system pageThree" id="Request_form" value="3">
+            <fieldset id="f2">
+                <!---<legend>Request Details</legend>-->
+                <table class="table">
+                    <caption>Document Requesting</caption>
+                    <tr>
+                        <th>Academic Record(s)/Document(s)/Credential(s) to be requested</th>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="OTR"><input  type="checkbox" name="Original Transcript of Records" id="OTR">Original Transcript of Records(from <input type="number" id="OTRfyear"name="from-year" class="input year" placeholder="2020" onchange="ifChanged('OTR')"> to <input type="number" class="input year" id="OTRtyear" onchange="ifChanged('OTR')" placeholder="2024" name="to-year">)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="OTRforMsMaPhd"><input type="checkbox"  name="Original Transcript of Records for" id="OTRforMsMaPhd">Original Transcript of Records for
+                        <select id="MsMaPhd" class="input" name="MsMaPhd" onchange="ifChanged('OTRforMsMaPhd')">
+                            <option value="">Choose</option>
+                            <option value="MS">MS</option>
+                            <option value="MA">MA</option>
+                            <option value="Phd">Phd only</option>
+                        </select>
+                    
+                        (continuous OTR from BS to MS/MA/Phd applies to BSU graduates only)</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for='CertTransferCredentials'><input type="checkbox" onclick="ifChecked('CertTransferCredentials')" name="Certificate of Transfer Credentials (CTC)/(Honorable Dismissal)" id="CertTransferCredentials">Certificate of Transfer Credentials (CTC)/(Honorable Dismissal)</label>
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>
+                            <input type="checkbox" id="CertEnrollment">Certificate of Enrollment
+                            Term:
+                            <select id="termOfEnrolCert" class="input">
+                                <option value="">Choose</option>
+                                <option value="First Semester">First Semester</option>
+                                <option value="Second Semester">Second Semester</option>
+                                <option value="Midyear">Mid Year</option>
+                            </select>
+                            <input class="input" type="number" id="fromYear" placeholder="2020">to<input type="number" readonly class="input"  id="toYear" placeholder="2024">
+                        </label>
+                     
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="CertFinalGradesCheckbox">
+                                <input type="checkbox" id="CertFinalGradesCheckbox" name="Certificate of Final Grades:">Certificate of Final Grades:
+                            </label>
+    
+                            <label for="term3Select">Term:</label>
+                            <select id="term3Select" name="CertFnlGrades" class="input">
+                                <option value="">Choose</option>
+                                <option value="First Semester">First Semester</option>
+                                <option value="Second Semester">Second Semester</option>
+                                <option value="Mid Year">Mid Year</option>
+                            </select>
+                            <label for="fromYearInput">S.Y From:</label>
+                            <input type="number" id="fromYearInputGrades" class="input year" placeholder="2020">
+                            <label for="toYearInput">To:</label>
+                            <input type="number" id="toYearInputGrades" class="input year" placeholder="2024" >
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="evaluation"><input type="checkbox" onclick="ifChecked('evaluation')" id="evaluation"name="Evaluation">Evaluation</td></label>
+                    </tr>
+                    <tr>
+                        <td><label for="SealedEnvelope"><input type="checkbox" onclick="ifChecked('SealedEnvelope')" id="SealedEnvelope" name="Sealed Envelope">Sealed Envelope</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Course Description"><input type="checkbox" onclick="ifChecked('Course Description')" id="Course Description" name="Course Description">Course Description</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Authentication/Cert Copy of OUR file"><input type="checkbox"  id="Authentication/Cert Copy of OUR file" name="Authentication/Cert Copy of OUR file">Authentication(Personal Copy)/Certified Photocopy of OUR File:</label><br>
+                            <input type="checkbox" id="f-137" name="F-137">F-137 <input type="checkbox" id="f-138" name="f-138">F-138 <input type="checkbox" id ="otrAuthen" name="OTR">OTR <input type="text" style="display: none;" class="input" id="otrtype" > <input type="checkbox" id="others" name="other/Authentication/CP OUR file">Others:<input type="text" style="display:none" id="otherType" class="input" name="Other Authentication/CP OUR file" placeholder="Please Specify">
+                        </td>
+                    </tr>
+                </table>
+
+                <button type='button' onclick="showOtherCert()" class="button" id="otherCertButton">Other Certifications</button>
+                <table id="otherCertification" style="display: none;">
+                <tr>
+                    <td><label for="TrueCopyGrades"><input type="checkbox" onclick="ifChecked('TrueCopyGrades')"id="TrueCopyGrades" name="True Copy of Grades">True Copy of Grades(TCG)</label></td>
+                    </td>
+                    <td><label for="UnitsEarned"><input type="checkbox" name="Units Earned" id="UnitsEarned">Units Earned:
+                        <select id="unitsEarned" name="Units Earned" class="input">
+                            <option value="0">Choose</option>
+                            <option value="1">BS</option>
+                            <option value="2">MA/MS</option>
+                            <option value="3">Phd</option>
+                        </select></label>
+                    <td><label for="Verification"><input type="checkbox" id="Verification" onclick="ifChecked('Verification')"name="Verification">Verification</label></td>
+                    <td><label for="NSTPserialnumber"><input type="checkbox" id="NSTPserialnumber" onclick="ifChecked('NSTP Serial Number')" name="NSTP serial number">NSTP Serial Number</label></td>
+                <tr>
+                    <tr>
+                        <tr>
+                            <td><label for="GWA"><input type="checkbox" id="GWA" onclick="ifChecked('GWA')" name="GWA"> GWA</label></td>
+                            <td><label for="GradingSystem"><input onclick="ifChecked('GradingSystem')" type="checkbox" id="GradingSystem" name="Grading System"> Grading System</label></td>
+                            <td><label for="CAV"><input type="checkbox" onclick="ifChecked('CAV')" id="CAV" name="CAV"> CAV</label>
+                                <select id="cavtype" name="cavtype" class="input">
+                                    <option value="0">Choose</option>
+                                    <option value="1">Local</option>
+                                    <option value="2">Overseas</option>
+                                </select>
+                            </td>
+                            <td><label for="Graduation"><input onclick="ifChecked('Graduation')"id="Graduation" type="checkbox" name="Graduation">Graduation</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="AsAcademicAchiever"><input type="checkbox" onclick="ifChecked('AsAcademicAchiever')" id="AsAcademicAchiever" name="As Academic achiever"> As Academic Achiever</label></td>
+                            <td><label for="IDCertification"><input type="checkbox" onclick="ifChecked('IDCertification')" id="IDCertification" name="ID Certification"> ID Certification</label></td>
+                            <td><label for="MediumOfInstruction"><input type="checkbox" onclick="ifChecked('MediumOfInstruction')" id="MediumOfInstruction" name="Medium of Instruction"> Medium Of Instruction</label></td>
+                
+                        </tr>
+                        <tr>
+                            <td><label for="CompletedDegree"><input type="checkbox" id="CompletedDegree" onclick="ifChecked('CompletedDegree')" name="Completed Degree"> Completed Degree</label></td>
+                            <td><label for="NoSpecialOrderRequired"><input type="checkbox" id="NoSpecialOrderRequired" name="no special order required"> No Special Order Required</label></td>
+                            <td><label for="AsHonorGraduate"><input type="checkbox"  onclick="ifChecked('AsHonorGraduate')" id="AsHonorGraduate" name="As honor Graduate"> As honor Graduate</label></td>
+                            
+                        </tr>                        
+                </table>
+                
+                <div class="nextback">
+                    <button id="backp2" id='backButton'class="button" onclick="backPage('Request_form')">Back</button>
+                    <button  class="button" id='updateContent' onclick="nextPage('Request_form')">Update Content</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class=" system pageFour" id="Fees_assess_form" value="4">
+            <fieldset id="f3">
+                <div id="docs">
+                <ul id="itemList">
+                    <span style="text-align: center;">The documents you requested will be shown here</span><hr>
+                </ul>
+            </div>
+                <table id="docs_requested" class="table">
+                    <tr>
+                        <th>Document</th>
+                        <th>Amount</th>
+                    </tr>
+                </table>           
+                <div class="nextback">
+                <button  class="button" onclick="backPage('Fees_assess_form')" >Back</button>
+                <button class="button"  class="next">PAY NOW</button>
+                </div>
+            <p>2A-SERAFINO, RILLERA, POLO</p>
+            </fieldset>
+
+        </div>
+    </form>
+<script src="RequestJS.js"></script>
+</body>
+</html>

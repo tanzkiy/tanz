@@ -1,0 +1,572 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+#LogoTitle {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: green/*#478f47*/;
+  height: 8vh;
+  border-bottom: 2px solid yellow;
+  color: white;
+  position: fixed; 
+  top: 0;
+  z-index: 10;
+}
+
+#LogoTitle > span {
+  font-size: x-large;
+  font-family: 'Jetbrains Mono', cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+}
+
+#LogoTitle > .logo {
+  height: 7.6vh;
+  padding-right: 10px;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-image: url('BSUbg4.png');
+  background-size: cover;
+  background-position: center;
+  position: fixed; 
+  z-index: -1;
+  top: 8vh; 
+}
+
+.system:not(.pageOne, .pageTwo) {
+  width: 100%;
+  height: auto; 
+  margin-top: 8vh; 
+}
+.pageOne{
+  width: 100%;
+  height: 92vh; 
+  margin-top: 8vh; 
+}
+
+/*Page One*/
+.pageOne{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position:static;
+}
+
+.bsulogo{
+  height:15%;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 0;
+  top: 25px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(255 ,255, 0 , 0.5);
+}
+.vloginm{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#vision, #mission{
+  width: 29%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.1); 
+  -webkit-backdrop-filter:blur(15px);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  filter:saturate(150%)
+  
+}
+
+#mission  h2, #vision  h2{
+  font-family: 'Jetbrains Mono',Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin:0 auto;
+  letter-spacing: 2px;
+  color: black;
+  border-radius: 10px;
+  border-top: 1px solid black;
+}
+
+#mission > p, #vision > p{
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  line-height: 1cm;
+  font-size: large;
+  font-family: 'Jetbrains Mono',Arial, Helvetica, sans-serif;
+  
+}
+.pageOne > #f1 {
+  background-color: rgba(0, 0, 0, 0.1); 
+  -webkit-backdrop-filter:blur(15px);
+  backdrop-filter: blur(7px);
+  padding: 20px;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  filter:saturate(150%);
+  height: auto;
+  text-align:center;
+  font-size: large;
+  line-height: 250%;
+  width: 30%;
+  font-family: 'Jetbrains Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: 1.2px;
+  border-radius: 20px;
+}
+.log{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-radius:10px;
+}
+
+/************/
+/*Page Two*/
+.pageTwo > #f1{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1); 
+  -webkit-backdrop-filter:blur(15px);
+  backdrop-filter: blur(15px);
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  filter:saturate(120%);
+  height: auto;
+  text-align:center;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Jetbrains Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 2.1cap;
+  font-size: 20px;
+}
+
+.pageTwo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.width{
+  width:70px
+}
+#specification{
+  width: auto;
+  border-radius: 5px;
+  border: none;
+  height: 4vh;
+}
+#nostyle{
+  font-size: larger;
+  display: inline-block;
+  font-family: cursive;
+  font-weight: bold;
+  display: block;
+  align-self: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-top: 1px solid black;
+  margin: 1px;
+}
+
+.year{
+  width: 70px;
+
+}
+.pageTwo > #f1 > table > td{
+  padding: 30px;
+  margin: 0 auto;
+}
+.inputInfo{
+  border-radius: 5px;
+  border: none;
+  height: 4vh;
+}
+.pageTwo #f1  #tableStudInfo{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.pageTwo .nextback, button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  border-bottom: 1px solid black;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+}
+
+/**Page 1 and 2*/
+.pageOne button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+/*page 3 and 4 */
+.pageThree  .nextback, .pageFour .nextback{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  margin: 15px auto;
+}
+
+
+.table, th, td{
+  border: 1px solid gray;
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 10px
+
+}
+  caption{
+  font-weight: bold;
+  font-size: large;
+}
+th{
+  text-align: center;
+}
+
+
+/*******************/
+/*Page Three*/
+.pageThree #f2{
+  border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1); 
+    -webkit-backdrop-filter:blur(15px);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    filter:saturate(120%);
+    font-size:22px;
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height:auto;
+    margin-bottom: 10px;
+}
+.pageThree .table{
+  height: auto;
+  text-align: left;
+  width: auto;
+  margin: 0 auto;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.pageThree #otherCertification {
+  margin-top: 10px;
+  display: flex;
+  text-align: left;
+  font-size: 22px;
+}
+#otherCertButton{
+  margin-top: 10px;
+}
+.pageThree{
+  overflow: auto;
+}
+
+
+/************************/
+.pageFour #f3{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1); 
+  -webkit-backdrop-filter:blur(15px);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  filter:saturate(120%);
+  height: auto;
+  font-size: 26px;
+  width: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px;
+
+}
+#f3 > .table{
+  line-height: 35px;
+}
+
+
+#docs{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#itemList{
+  list-style-type: none;
+  width:auto;
+  height:auto;
+  margin-top: 5%;
+  line-height: .9cm;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.docButcontainer{
+  display: flex;
+  flex-direction: row;
+}
+
+/***page 2 3 and 4*/
+
+.pageTwo, .pageThree, .pageFour{
+  display: none;
+}
+
+
+
+
+
+
+/*Styles All Pages*/
+
+button:hover{
+  transition:.3s ease;
+  color: lightgreen;
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid white;
+}
+button:active{
+  transition: .3s ease;
+  color:chartreuse
+
+}
+
+select{
+  font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+}
+.input::placeholder{
+  text-align: center;
+  font-family: 'Jetbrains mono',Arial, Helvetica, sans-serif;
+  color: darkslategrey
+}
+
+fieldset > p{
+  text-align: center;
+  margin-right: 50px;
+}
+
+/*input styles*/
+input{
+  font-family: 'Jetbrains Mono', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input{
+border-radius: 5px;
+border: none;
+height: 4vh;
+}
+select, fieldset{
+  font-family: 'JetBrains Mono',Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+}
+.button{
+  font-family: "Jetbrains Mono",Arial, Helvetica, sans-serif;
+  height: 4vh;
+  background-color: #519551;
+  padding: 5px;
+  color:white;
+  text-decoration: none;
+  outline-color: aliceblue;
+  border-bottom: 3px solid yellow;
+  border-radius: 10px;
+  border-top: 2px solid white;
+  margin: 0 auto;
+  font-size: large;
+  border-left:none;
+  border-right:none;
+}
+
+.removebutton{
+ margin-top: -1px;
+ font-family: "Jetbrains Mono",Arial, Helvetica, sans-serif;
+  background-color: #317031;
+  color:white;
+  text-decoration: none;
+  outline-color: aliceblue;
+  border-bottom: 3px solid yellow;
+  border-radius: 10px;
+  border-top: 2px solid white;
+  font-size:large;
+  border-left:none;
+  border-right:none;
+  height: 4vh;
+  line-height: 10px;
+  margin-left: 5px;
+
+}
+*{
+  box-sizing: border-box;
+}
+
+#error{
+  font-size: 12px;
+  color: red;
+}
+
+.off-screen-menu{
+  background-color:rgba(0, 190, 0, 0.3);
+  height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  transition:.3s ease;
+  border-color: yellow;
+  border-style: double;
+  border-radius: 15px;
+  border-width: 5px;
+
+}
+
+.gallery{
+  font-family: "Jetbrains Mono",Arial, Helvetica, sans-serif;
+  margin-top: 20%;
+  font-size: large;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery_button{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.prev{
+  align-self: flex-start;
+}
+
+.next{
+  align-self: flex-end;
+}
+
+.off-screen-menu.active{
+  right: 0;
+} 
+
+.ham_nav{
+  padding: 1rem;
+  display: flex;
+  
+}
+
+.ham-menu{
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+
+.ham-menu span{
+  
+  height: 5px;
+  width: 50%;
+  background-color: aquamarine;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s ease;
+}
+
+.ham-menu span:nth-child(1){
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3){
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.theme{
+  background-color:darkgreen ;
+  border-radius: 15px;
+}
+
+.select{
+  border-radius: 15px;
+}
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img{
+  width: 100%;
+  display: none;
+}
+
+img.displaySlide{
+  display: block;
+}
+
+
+.error{
+  color: darkred;
+  font-size: 14px;
+}
